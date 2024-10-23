@@ -1,0 +1,185 @@
+/* ──── ୨୧ ──── */
+
+
+@media screen and (min-width: 709px) and (max-width: 990px) {
+    .container {
+        margin: auto;
+        width: 470px;
+    }
+    .container #addbtn {
+        margin-left: 158px;
+        padding: 20px;
+    }
+    
+    .title {
+        margin-top: 20px;
+    }
+}
+
+input[type="checkbox"] {
+    margin-left: 50px;
+    width: 20px;
+    height: 20px;
+    box-shadow: none;
+}
+
+@media screen and (max-width:709px) {
+    .container #addbtn {
+        margin-left: 158px;
+        padding: 20px;
+    }
+
+    .title {
+        margin-top: 20px;
+    }
+}
+
+/* ♡ root */
+:root {
+    --cinza-bg: #e1e1e1;
+    --cinza-bordinha: #B1B1B1;
+}
+
+/* ♡ body */
+body {
+    background: var(--cinza-bg);
+    justify-content: baseline;
+    align-items: center;
+}
+
+/* ♡ título */
+.title {
+    text-align: center;
+}
+
+#todo {
+    color: white;
+    font-size: 5em;
+    text-shadow: 30px -10px 4px #0000003f;
+}
+
+
+
+#list {
+    vertical-align: bottom;
+    font-size: 2.5em;
+    font-family: "Itim";
+    color: #6B6565;
+}
+
+.check::before {
+    position: absolute;
+    margin-top: -88px;
+    margin-left: 53px;
+    content: '✔';
+    font-size: 46px;
+    color: rgb(172, 172, 172);
+    filter: blur(2px);
+}
+
+/* ♡ container */
+.container {
+    margin-top: 60px;
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#nova-tarefa {
+    padding-left: 15px;
+}
+
+.task-item {
+    font-size: 1.1em;
+    word-wrap: break-word; word-break: break-all;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+
+.delete-icon {
+    margin-left: auto;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+
+#tarefas {
+    overflow: auto;
+    box-shadow: 10px 12px 7px rgb(124, 124, 124);
+    position: static;
+    margin: 20px;
+    width: 400px;
+    height: 300px;
+    background-color: white;
+    border: 1px solid var(--cinza-bordinha);
+    border-radius: 8px;
+}
+
+
+
+.delete-icon:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+
+}
+
+
+#addbtn {
+    vertical-align: middle;
+    margin: 0 170px 0 10px;
+}
+
+#addbtn:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+input {
+    box-shadow: 10px 12px 7px rgb(124, 124, 124);
+    border: 1px solid var(--cinza-bordinha);
+    border-radius: 8px;
+    width: 270px;
+    height: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.task-item {
+    display: flex;
+    /* Para alinhar checkbox, texto e botão na mesma linha */
+    align-items: center;
+    /* Alinha verticalmente */
+    margin: 10px 0;
+    /* Espaçamento entre as tarefas */
+}

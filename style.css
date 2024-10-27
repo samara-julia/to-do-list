@@ -1,7 +1,7 @@
 /* ──── ୨୧ ──── */
 
 
-@media screen and (min-width: 709px) and (max-width: 990px) {
+@media screen and (min-width: 709px) and (max-width: 1010px) {
     .container {
         margin: auto;
         width: 470px;
@@ -17,10 +17,14 @@
 }
 
 input[type="checkbox"] {
-    margin-left: 50px;
+    margin-left: 10px;
     width: 20px;
     height: 20px;
     box-shadow: none;
+}
+
+input:focus {
+    outline: none;
 }
 
 @media screen and (max-width:709px) {
@@ -42,7 +46,7 @@ input[type="checkbox"] {
 
 /* ♡ body */
 body {
-    background: var(--cinza-bg);
+    background: #f2e8e1;
     justify-content: baseline;
     align-items: center;
 }
@@ -55,7 +59,7 @@ body {
 #todo {
     color: white;
     font-size: 5em;
-    text-shadow: 30px -10px 4px #0000003f;
+    text-shadow: 30px -10px 4px #ae9c8f;
 }
 
 
@@ -64,7 +68,7 @@ body {
     vertical-align: bottom;
     font-size: 2.5em;
     font-family: "Itim";
-    color: #6B6565;
+    color: #7a695d;
 }
 
 .check::before {
@@ -73,7 +77,7 @@ body {
     margin-left: 53px;
     content: '✔';
     font-size: 46px;
-    color: rgb(172, 172, 172);
+    color: #ae9c8f;
     filter: blur(2px);
 }
 
@@ -91,14 +95,10 @@ body {
     padding-left: 15px;
 }
 
-.task-item {
-    font-size: 1.1em;
-    word-wrap: break-word; word-break: break-all;
-    align-items: center;
-    padding: 10px;
-    border-bottom: 1px solid #ccc;
+input[type="checkbox"] {
+    margin-right: 12px;
+    
 }
-
 
 .delete-icon {
     margin-left: auto;
@@ -109,14 +109,15 @@ body {
 
 
 #tarefas {
+    min-width: 360px;
     overflow: auto;
-    box-shadow: 10px 12px 7px rgb(124, 124, 124);
+    box-shadow: 10px 12px 7px #ae9c8f;
     position: static;
     margin: 20px;
     width: 400px;
     height: 300px;
     background-color: white;
-    border: 1px solid var(--cinza-bordinha);
+    border: 1px solid #ae9c8f;
     border-radius: 8px;
 }
 
@@ -131,7 +132,7 @@ body {
 
 #addbtn {
     vertical-align: middle;
-    margin: 0 170px 0 10px;
+    margin: 0 170px 0 20px;
 }
 
 #addbtn:hover {
@@ -140,46 +141,26 @@ body {
 }
 
 input {
-    box-shadow: 10px 12px 7px rgb(124, 124, 124);
-    border: 1px solid var(--cinza-bordinha);
+    color: #7a695d;
+    font-family: "Itim";
+    box-shadow: 10px 12px 7px #ae9c8f;
+    border: 1px solid #ae9c8f;
     border-radius: 8px;
     width: 270px;
     height: 40px;
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .task-item {
-    display: flex;
-    /* Para alinhar checkbox, texto e botão na mesma linha */
+    color: #7a695d;
+    font-family: "Itim";
+    font-size: 1.1em;
+    word-wrap: break-word; word-break: break-all;
     align-items: center;
-    /* Alinha verticalmente */
-    margin: 10px 0;
-    /* Espaçamento entre as tarefas */
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    justify-content: space-between;
 }

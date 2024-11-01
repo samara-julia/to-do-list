@@ -59,7 +59,7 @@ body {
 #todo {
     color: white;
     font-size: 5em;
-    text-shadow: 30px -10px 4px #ae9c8f;
+    text-shadow: 10px 2px 5px #ae9c8f;
 }
 
 
@@ -69,16 +69,6 @@ body {
     font-size: 2.5em;
     font-family: "Itim";
     color: #7a695d;
-}
-
-.check::before {
-    position: absolute;
-    margin-top: -88px;
-    margin-left: 53px;
-    content: '✔';
-    font-size: 46px;
-    color: #ae9c8f;
-    filter: blur(2px);
 }
 
 /* ♡ container */
